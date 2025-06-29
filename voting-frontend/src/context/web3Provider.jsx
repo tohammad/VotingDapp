@@ -29,8 +29,9 @@ const Web3Provider = ({ children }) => {
 
   return (
     <>
-      <Web3Context.Provider value={web3State}>{children}</Web3Context.Provider>
-      <button onClick={handleWallet}>Connect Wallet</button>
+      <Web3Context.Provider value={{ web3State, handleWallet }}>
+        {children}
+      </Web3Context.Provider>
     </>
   );
 };
