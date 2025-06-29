@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { Dummy } from './Dummy'
+import Dummy from './Dummy'
 import Web3Provider from './context/web3Provider'
 
 function App() {
